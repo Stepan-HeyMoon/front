@@ -3,60 +3,10 @@
 @import '@fontsource/roboto/500.css';
 @import '@fontsource/roboto/700.css';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    color: #000;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     border-bottom: 2px solid #fff ;
     padding: 20px 50px;
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
-a {
-    text-decoration: none;
-    color: #cb2222;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    padding: 50px;
-}
-
-.post {
-    width: 500px;
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 5px;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 12px;
-}
-
-.post h2 {
-    margin-bottom: 20px;
-}
-
-.post p {
-    margin-bottom: 10px;
-}
-
-.post a {
-    color: #000;
-}
-
-.post a:hover {
-    text-decoration: underline;
 }

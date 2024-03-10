@@ -1,7 +1,17 @@
+'use client'
 import { AppBar, Toolbar, Typography, Button, Stack, Icon } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+    const router = useRouter()
+    const handleButtonClick = async () => {
+        try {
+            router.push("http://localhost:3001/api/auth/google/login")
+        } catch (error) {
+            console.error('Error sending data:', error);
+        }
+    };
     return (
         <AppBar position="static">
             <Toolbar>
@@ -12,7 +22,7 @@ const Header = () => {
                             Поиск данных в облачных хранилищах
                         </Typography>
                     </Stack>
-                    <Button color="inherit" sx={{ fontSize: '1.2rem', mt: { xs: '10px', sm: '0' } }}>
+                    <Button onClick={handleButtonClick} color="inherit" sx={{ fontSize: '1.2rem', mt: { xs: '10px', sm: '0' } }}>
                         Login
                     </Button>
                 </Stack>
